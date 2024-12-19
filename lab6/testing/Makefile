@@ -31,8 +31,8 @@ default:
 	$(RMAKE) PYTHON=$(PYTHON) check
 
 check:
-	@CLASSPATH=..:$(CLASSPATH) java -ea capers.Main >/dev/null 2>&1 || true
-	@echo "Testing application capers.Main..."
+	@CLASSPATH=..:$(CLASSPATH) java -ea capers.IntList >/dev/null 2>&1 || true
+	@echo "Testing application capers.IntList..."
 	$(TESTER) $(TESTER_FLAGS) --src=$(SRCDIR) $(TESTS)
 
 # 'make clean' will clean up stuff you can reconstruct.
